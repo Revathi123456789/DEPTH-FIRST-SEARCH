@@ -66,32 +66,11 @@ Now, Queue becomes empty, So, terminate these process of iteration.
 <li>If Not Visited, add it to the Queue. Else Continue.</li>
 <li>Iterate steps 4 and 5 until all nodes get visited, and there are no more unvisited nodes.</li>
 
-</ol>
-
-<hr>
-
-<h3>Program</h3>
-
-```python
+## Program
+```
 from collections import deque
 from collections import defaultdict
 
-
-'''
-V E
-FOR EVERY EDGE
-U V
-7 9
-A B
-A C 
-A F
-C E
-C F
-C D
-D E 
-D G
-G F
-'''
 def bfs(graph,start,visited,path):
     queue = deque()
     path.append(start)
@@ -122,6 +101,9 @@ visited = defaultdict(bool)
 traversedpath = bfs(graph,start,visited,path)
 print(traversedpath)
 ```
+
+</ol>
+<hr>
 
 <h3>Sample Input</h3>
 <hr>
@@ -160,8 +142,6 @@ G F <BR>
 <h3>Result:</h3>
 <hr>
 <p>Thus,a Graph was constructed and implementation of Breadth First Search for the same graph was done successfully.</p>
-
-
 
 
 
